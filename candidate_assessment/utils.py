@@ -6,6 +6,18 @@ class Questions:
         questions = [
             models.Question(
                 text="Препятствия стимулируют Вас?"
-            )
+            ),
+            models.Question(
+                text="Когда Вы работаете без вдохновения, это обычно заметно?"
+            ),
+            models.Question(
+                text="Иногда Вы откладываете то, что нужно сделать сейчас?"
+            ),
+            models.Question(
+                text="В жизни нужно полагаться только на самого себя?"
+            ),
+            models.Question(
+                text="В жизни мало вещей более важных, чем деньги?"
+            ),
         ]
         return questions
