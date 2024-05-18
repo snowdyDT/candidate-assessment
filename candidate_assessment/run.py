@@ -1,6 +1,7 @@
-from fastapi import FastAPI
-from candidate_assessment import routes
 import uvicorn
+from fastapi import FastAPI
+
+from candidate_assessment import routes
 
 app = FastAPI()
 app.include_router(routes.router)
