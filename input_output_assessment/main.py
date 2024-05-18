@@ -1,5 +1,6 @@
-from input_output_assessment import utils
 from input_output_assessment import config
+from input_output_assessment import utils
+
 
 def main():
     motivation_answers = utils.get_answers(config.Questions.motivation_questions.value)
