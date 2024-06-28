@@ -16,7 +16,12 @@ Including another URLconf
 from django.contrib import admin
 from django.urls import path, include
 
+from quizzes import views
+
 urlpatterns = [
     path('admin/', admin.site.urls),
     path('quizzes/', include('quizzes.urls'))
 ]
+
+
+handler404 = views.page_not_found
