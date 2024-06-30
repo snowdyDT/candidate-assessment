@@ -20,7 +20,7 @@ class Question(models.Model):
 
 class AnswerChoice(models.Model):
     question = models.ForeignKey(Question, on_delete=models.CASCADE)
-    text = models.CharField(max_length=2)  # 'A' или 'Б'
+    text = models.CharField(max_length=3)
 
     def __str__(self):
         return self.text
