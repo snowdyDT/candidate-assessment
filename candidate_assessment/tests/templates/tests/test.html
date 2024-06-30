@@ -1,0 +1,9 @@
+<h1>{{ test.name }}</h1>
+<form method="post">
+    {% csrf_token %}
+    {% for question in questions %}
+        <p>{{ question.text }}</p>
+        {{ form.as_p }}
+    {% endfor %}
+    <button type="submit">Submit</button>
+</form>
